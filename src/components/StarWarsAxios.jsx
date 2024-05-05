@@ -17,7 +17,7 @@ export default function StarWarsAxios() {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-4">
       {films.map((film, index) => (
         <div key={index} className="border p-4">
           <h2 className="text-xl font-semibold text-orange-500">

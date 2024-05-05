@@ -14,7 +14,7 @@ export default function StarWars() {
         const data = await response.json();
         setFilms(data.results);
       } catch (error) {
-        console.error("Sucks to be you!:", error);
+        console.error("Sucks to be you!:");
       }
     }
     fetchFilms();
