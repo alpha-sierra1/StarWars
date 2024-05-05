@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import StarWars from "./components/StarWars";
-// import StarWarsAxios from "./components/StarWarsAxios";
+import StarWarsAxios from "./components/StarWarsAxios";
 import "./index.css";
 import "tailwindcss/tailwind.css";
 
@@ -16,9 +16,9 @@ function App() {
       <div className="text-center my-10">
         <button className="border border-solid border-orange-500 rounded-md px-4 py-2 bg-orange-500">
           Do the same with Axios
-        </button>{" "}
+        </button>
       </div>
-      {/* <StarWarsAxios /> */}
+      <StarWarsAxios />
       {/* <Router>
         <Switch>
           <Route path="/src/components/StarWarsAxios.jsx">
@@ -31,7 +31,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </Router> */}
+      </Router>  */}
     </>
   );
 }
@@ -39,7 +39,7 @@ function App() {
 export default App;
 
 // import { useState } from "react";
-// import StarWars from "./components/StarWars";
+// // import StarWars from "./components/StarWars";
 // import StarWarsAxios from "./components/StarWarsAxios";
 // import "./index.css";
 // import "tailwindcss/tailwind.css";
@@ -70,5 +70,3 @@ export default App;
 //     </Router>
 //   );
 // }
-
-// export default App;

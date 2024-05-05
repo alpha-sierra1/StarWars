@@ -17,16 +17,18 @@ export default function StarWarsAxios() {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-4">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-2">
       {films.map((film, index) => (
-        <div key={index} className="border p-4">
-          <h2 className="text-xl font-semibold text-orange-500">
+        <div key={index} className="border p-5 bg-neutral-700">
+          <h2 className="text-xl font-semibold text-yellow-600 mb-1">
             {film.title}
           </h2>
-          <p>{film.opening_crawl}</p>
-          <p>Director: {film.director}</p>
-          <p>Producer: {film.producer}</p>
-          <p>Release Date: {film.release_date}</p>
+          <p className="text-gray-400 mb-1 tracking-wide">
+            {film.opening_crawl}
+          </p>
+          <p className="text-yellow-600 mb-1">Director: {film.director}</p>
+          <p className="text-yellow-600 mb-1">Producer: {film.producer}</p>
+          <p className="text-yellow-600">Release Date: {film.release_date}</p>
         </div>
       ))}
     </div>
