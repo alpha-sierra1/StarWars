@@ -12,5 +12,5 @@ export default defineConfig({
       plugins: [tailwindcss, autoprefixer],
     },
   },
-  base: "https://alpha-sierra1.github.io/starwars/",
+  base: "./",
 });
