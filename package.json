@@ -1,7 +1,7 @@
 {
   "name": "starwars",
   "version": "1.0.0",
-  "homepage": "git@github.com:alpha-sierra1/starwars.git",
+  "homepage": "https://alpha-sierra1.github.io/starwars/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

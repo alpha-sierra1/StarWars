@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 // import App from "./App.jsx";
 // index.js or main.js
@@ -14,7 +14,7 @@ import People from "./components/People";
 import Species from "./components/Species";
 import Vehicles from "./components/Vehicle";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <StarWars />,
