@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // import App from "./App.jsx";
 // index.js or main.js
@@ -14,36 +14,41 @@ import People from "./components/People";
 import Species from "./components/Species";
 import Vehicles from "./components/Vehicle";
 
-const router = createHashRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <StarWars />,
+    },
+    {
+      path: "/axios",
+      element: <StarWarsAxios />,
+    },
+    {
+      path: "/starships",
+      element: <StarShips />,
+    },
+    {
+      path: "/planets",
+      element: <Planets />,
+    },
+    {
+      path: "/people",
+      element: <People />,
+    },
+    {
+      path: "/species",
+      element: <Species />,
+    },
+    {
+      path: "/vehicles",
+      element: <Vehicles />,
+    },
+  ],
   {
-    path: "/",
-    element: <StarWars />,
-  },
-  {
-    path: "/axios",
-    element: <StarWarsAxios />,
-  },
-  {
-    path: "/starships",
-    element: <StarShips />,
-  },
-  {
-    path: "/planets",
-    element: <Planets />,
-  },
-  {
-    path: "/people",
-    element: <People />,
-  },
-  {
-    path: "/species",
-    element: <Species />,
-  },
-  {
-    path: "/vehicles",
-    element: <Vehicles />,
-  },
-]);
+    basename: "/starwars",
+  }
+);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
